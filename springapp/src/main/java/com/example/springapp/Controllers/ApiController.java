@@ -1,13 +1,16 @@
-package com.example.springapp.Controllers;
-import org.springframework.stereotype.Controller; 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+package com.example.demo.Controllers;
 
-@Controller
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class ApiController {
-    String Welcome()
-    {
-        return "Welcome String Boot!";
-    }
-}
+    
+        @GetMapping("/welcome")
+            public String welcome() 
+                {
+                        return "Welcome";
+                            }
+
+                            }
+
