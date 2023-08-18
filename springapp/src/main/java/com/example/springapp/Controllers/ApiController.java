@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApiController {
 @GetMapping("/welcome")
-public String welcome() 
+public String Welcome() 
     {
-        return "Welcome";
+        return "Welcome String Boot!";
     }
 }
 
